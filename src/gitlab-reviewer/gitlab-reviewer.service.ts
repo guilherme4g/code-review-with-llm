@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
-export class AppService {
+export class GitlabReviewerService {
   processMergeRequest(): string {
-    return 'Hello World!';
+    return 'World';
   }
 }
