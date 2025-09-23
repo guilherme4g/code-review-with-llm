@@ -7,7 +7,8 @@ export class GitlabReviewerController {
   constructor(private readonly gitlabReviewerService: GitlabReviewerService) { }
   
   @Post()
-  reviewMergeRequest(@Body() Body: any): string {
+  reviewMergeRequest(@Body() body: any): string {
+    console.log(`body:${body}`);
     return this.gitlabReviewerService.processMergeRequest();
   }
 }
